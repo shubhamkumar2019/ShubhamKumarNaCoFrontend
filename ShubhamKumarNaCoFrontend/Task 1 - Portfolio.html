@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .circle {
+            height: 100px;
+            width: 100px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content-box {
+            border: 1px solid #000;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+        .grid-box {
+            height: 100px;
+            border: 1px dotted #000;
+            margin-bottom: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+        .full-height {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Header Section -->
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h1>Personal Portfolio</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Left Section -->
+            <div class="col-md-3">
+                <div class="content-box full-height d-flex flex-column justify-content-center">
+                    <h4 class="section-title">Personal Portfolio</h4>
+                    <div class="circle"></div>
+                    <p class="mt-3 text-center">This section contains an introduction or profile summary.</p>
+                </div>
+            </div>
+
+            <!-- Center Section -->
+            <div class="col-md-6">
+                <div class="content-box">
+                    <div class="circle mb-3"></div>
+                    <h4 class="text-center">PERSONAL DETAILS</h4>
+                    <div class="row text-center mb-3">
+                        <div class="col">
+                            <button class="btn btn-primary">TITLE</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-secondary">ABOUT</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col grid-box">ACHIEVEMENTS<br><small>Details about accomplishments</small></div>
+                        <div class="col grid-box">PROJECTS<br><small>List of projects</small></div>
+                    </div>
+                    <div class="row">
+                        <div class="col grid-box">MOVEMENTS<br><small>Career or educational milestones</small></div>
+                        <div class="col grid-box">PROJECTS<br><small>Additional project details</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="col-md-3">
+                <div class="content-box full-height d-flex flex-column justify-content-center">
+                    <h4 class="section-title">Personal Content</h4>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Blog Post</h5>
+                            <p class="card-text text-center">Links to blog articles</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Social Media</h5>
+                            <p class="card-text text-center">Links to social platforms</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Web Links</h5>
+                            <p class="card-text text-center">Links to external resources</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="content-box text-center">
+                    <h4 class="section-title">Basic Info</h4>
+                    <p>Contact details, address, and other basic information.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-box text-center">
+                    <h4 class="section-title">Your Projects</h4>
+                    <p>Summary of recent or significant projects.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-box text-center">
+                    <h4 class="section-title">Additional Info</h4>
+                    <p>Other relevant details or links.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
