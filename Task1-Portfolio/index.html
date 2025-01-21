@@ -1,125 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
-<body>
-    <header class="header">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="h4 mb-0">Personal Portfolio</h1>
-            <nav>
-                <a href="#" class="nav-link d-inline">Home</a>
-                <a href="#" class="nav-link d-inline">Contact</a>
-            </nav>
-        </div>
-    </header>
 
-    <div class="container my-4">
-        <div class="row">
-            <!-- Personal Profile -->
-            <div class="col-md-3">
-                <div class="profile-card">
-                    <h2 class="h5">📺 Personal Profile</h2>
-                    <p class="small">
-                        I am Shubham, someone deeply fascinated by the rapid advancements in technology and their impact on our lives. From exploring the potential of artificial intelligence to leveraging modern tools like smartphones, I believe technology is a powerful force for bridging gaps and unlocking new opportunities. At the same time, I remain curious about addressing challenges related to privacy, ethics, and human interaction in this evolving digital world.
-                    </p>
+<body>
+    <div class="container py-4">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border mb-4 gradient-custom">
+            <div class="container-fluid">
+                <!-- Brand and Toggler Section -->
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <!-- Brand Name -->
+                    <a class="navbar-brand" href="#">Portpone</a>
+                    <!-- Title displayed for larger screens -->
+                    <h1 class="mx-auto d-none d-lg-block fw-bold mb-0">Personal Portfolio</h1>
+                    <!-- Toggler Button for Collapsible Menu (visible on smaller screens) -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <!-- Collapsible Content Section -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <!-- 'News' Button with Primary Styling -->
+                            <a class="nav-link btn btn-primary text-white me-2" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- 'Docs' Button with Secondary Styling -->
+                            <a class="nav-link btn btn-secondary text-white me-2" href="#">Docs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <div class="row gy-4">
+            <!-- Personal Info -->
+            <div class="col-md-4">
+                <!-- Column spanning 4 grid spaces on medium screens and larger -->
+                <div class="card text-center">
+                    <!-- Card component for a structured layout with centered text -->
+                    <div class="card-body">
+                        <!-- Card body containing the content -->
+                        <h2 class="card-title">Personal Profile</h2>
+                        <!-- Title of the card -->
+                        <div class="">
+                            <!-- Placeholder for profile icon -->
+                            <img src="assets/images/icons8-portfolio-50.png" alt="">
+                        </div>
+                        <!-- Profile description -->
+                        <p>
+                            I am Shubham kumar, a dedicated and ambitious developer with expertise in front-end technologies like
+                            HTML, CSS,
+                            JavaScript, and React, alongside backend experience in Django and Strapi. With a solid
+                            foundation in
+                            databases such as SQL and PostgreSQL, I have successfully delivered diverse projects that
+                            bridge
+                            technology and real-world solutions. My portfolio includes building a dynamic event calendar
+                            application,
+                            developing an IoT-enabled pollution meter to monitor air quality using Arduino, and creating
+                            a fully
+                            functional e-commerce platform using React, Strapi, and Stripe. Having completed the
+                            Metacrafters summer
+                            training program in blockchain technologies like Ethereum, Avalanche, and Polygon, I am
+                            continually
+                            expanding my skill set.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Center Profile Section -->
-            <div class="col-md-6">
-                <div class="profile-card text-center">
-                    <div class="avatar">
-                        <img 
-                          src="assets/images/me.jpg" 
-                          alt="Profile Photo" 
-                          class="overflow-hidden imgxz"
-                        />
-                      </div>
-                      
-                    <h2 class="mb-4">Personal Portfolio</h2>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="bio-card">
-                                <h3 class="h5">Bio</h3>
-                                <p class="small">A personal portfolio is a showcase of your skills, achievements.</p>
+
+            <!-- Profile Section -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+
+                        <div class="personal-aling">
+                            <div class="noimg">Title</div>
+                            <div><img src="assets/images/icons8-male-user-50.png"  alt=""></div>
+                            <div class="noimg">info</div>
+                        </div>
+
+                        <div class="container my-2">
+                            <h3 class="text-center">Personal Portpone</h3>
+                            <div class="row">
+                                <div class="col-md-6 d-flex justify-content-center row-gap ">
+                                    <div class="bio-box p-3">
+                                        <h5 class="text-center"><strong>BIO:</strong></h5>
+                                        <ul class="list-unstyled">
+                                            <li>21 years old</li>
+                                            <li>Bihar</li>
+                                            <li>Nawada</li>
+                                            <li>Kalinga institute of industrial technology</li>
+                                            <li>3rd Year</li>
+                                            <li>hobbies: Handball</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <div class="bio-box p-3">
+                                        <h5 class="text-center"><strong>Languages:</strong></h5>
+                                        <ul class="list-unstyled">
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Java</li>
+                                            <li>DBMS</li>
+                                            <li>Python</li>
+                                            <li>C Programming</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="bio-card">
-                                <h3 class="h5">Bio</h3>
-                                <p class="small">A personal portfolio is a showcase of your skills, achievements.</p>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
 
             <!-- Personal Content -->
-            <div class="col-md-3">
-                <div class="profile-card">
-                    <h2 class="h5">Personal Content</h2>
-                    
-                    <h3 class="h6 mt-3">About me</h3>
-                    <ul class="list-unstyled">
-                        <li>Competitive Programmer</li>
-                        <li>MERN Developer</li>
-                        <li>Athlete</li>
-                    </ul>
+            <div class="col-md-4">
+                <div class="card">
+                    <!-- A card component for consistent styling -->
+                    <div class="card-body">
+                        <!-- Card body containing the main content -->
+                        <h2 class="card-title text-center">Personal Content</h2>
+                        <!-- Title of the section, centered -->
+                        <ul class="list-group">
+                            <!-- List group for structured content -->
 
-                    <h3 class="h6 mt-3">Contact</h3>
-                    <ul class="list-unstyled small">
-                        <li>Mobile: +91 6202608002</li>
-                        <li>Email: <a href="mailto:shubhamkumar4489@gmail.com">shubhamkumar4489@gmail.com</a></li>
-                        <li>Address: Madho Bigha, Nawada, Bihar, 805110</li>
-                    </ul>
+                            <!-- Section 1: About Me -->
+                            <div class="list-group-item gap-2 mt-2">
+                                <!-- List group item with gap for spacing and margin-top -->
+                                <button class="btn btn-success">About Me</button>
+                                <!-- Button for "About Me" functionality -->
+                                <li>Web Dev</li>
+                                <!-- Skill listed -->
+                                <li>Block chain dev</li>
+                                <!-- Skill listed -->
+                                <li>Content writer</li>
+                                <!-- Skill listed -->
+                                <li>Project Manager</li>
+                                <!-- Skill listed -->
+                            </div>
 
-                    <h3 class="h6 mt-3">Social Media</h3>
-                    <ul class="list-unstyled">
-                        <li>LinkedIn: <a href="https://www.linkedin.com/in/shubham-kumar-4489-s">shubham-kumar-4489-s</a></li>
-                        <li>Instagram</li>
-                    </ul>
+                            <!-- Section 2: Contact Information -->
+                            <div class="list-group-item gap-5 mt-1">
+                                <!-- List group item for contact details -->
+                                <button class="btn btn-primary">Contact us</button>
+                                <!-- Button for "Contact Us" functionality -->
+                                <li>phone: 6202608002</li>
+                                <!-- Contact phone number -->
+                                <li>github: https://github.com/shubhamkumar2019</li>
+                                <!-- GitHub profile link -->
+                                <li>linked in: https://www.linkedin.com/in/shubham-kumar-4489-s/</li>
+                                <!-- LinkedIn profile link -->
+                                <li>FaceBook: https://Facebook.com</li>
+                                <!-- Facebook profile link -->
+                            </div>
+
+                            <!-- Section 3: Hobbies -->
+                            <div class="list-group-item">
+                                <!-- List group item for hobbies -->
+                                <strong>Hobbies</strong>
+                                <!-- Title for hobbies section -->
+                                <li>Cricket</li>
+                                <!-- Hobby listed -->
+                                <li>Chess</li>
+                                <!-- Hobby listed -->
+                                <li>Handball</li>
+                                <!-- Hobby listed -->
+                                <!-- <li>Video editing</li> -->
+                                <!-- Commented-out hobby -->
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Basic Info Section -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h2 class="card-title">Basic Info</h2>
+                        <p>Background details and key facts.</p>
+                        <p>Life is full of challenges, but sometimes we face problems that seem too big to handle.
+                             People make mistakes, but it’s normal,
+                              and we can always learn from them.
+                               Some situations feel unfair, like when we don’t get
+                                what we deserve, but patience and kindness can help us move forward.
+                                 We all make decisions that affect others, so it’s important to
+                                  think carefully and avoid hurting anyone. Life is not always easy,
+                                   but with understanding and respect,
+                                    we can overcome difficulties and find happiness.!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Projects</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">Portfolio Website</li>
+                        </ul>
+                        <div class="description">
+                            <li><strong>HTML & CSS</strong></li>
+                            <p>Life is full of challenges, but sometimes we face problems that seem too big to handle.
+                                People make mistakes, but it’s normal,
+                                 and we can always learn from them.
+                                  Some situations feel unfair, like when we don’t get
+                                   what we deserve, but patience and kindness can help us move forward.
+                                    We all make decisions that affect others, so it’s important to
+                                     think carefully and avoid hurting anyone. Life is not always easy,
+                                      but with understanding and respect,
+                                       we can overcome difficulties and find happiness.!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Projects</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item">NotePad Online</li>
+                        </ul>
+                        <div class="description">
+                            <li><strong>HTML & CSS</strong></li>
+                            <p>Life is full of challenges, but sometimes we face problems that seem too big to handle.
+                                People make mistakes, but it’s normal,
+                                 and we can always learn from them.
+                                  Some situations feel unfair, like when we don’t get
+                                   what we deserve, but patience and kindness can help us move forward.
+                                    We all make decisions that affect others, so it’s important to
+                                     think carefully and avoid hurting anyone. Life is not always easy,
+                                      but with understanding and respect,
+                                       we can overcome difficulties and find happiness.!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Bottom Row -->
-        <div class="row">
-            <div class="col-md-4">
-                <div class="bottom-card">
-                    <h2 class="h5">Basic Info</h2>
-                    <p class="small">
-                        The Personal Portfolio Website is a project designed to showcase an individual's skills, achievements, and projects in a professional and visually appealing manner. Built using modern web technologies like HTML, CSS, and JavaScript, this website features responsive design principles to ensure accessibility across various devices.
-bottom card
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="bottom-card">
-                    <h2 class="h5">Project</h2>
-                    <h3 class="h6">Personal Portfolio Website</h3>
-                    <p class="small">
-                        The Personal Portfolio Website is a project designed to showcase an individual's skills, achievements, and projects in a professional and visually appealing manner. Built using modern web technologies like HTML, CSS, and JavaScript, this website features responsive design principles to ensure accessibility across various devices.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="bottom-card">
-                    <h2 class="h5">Certification</h2>
-                    <h3 class="h6">Certified in IoT Fundamentals</h3>
-                    <p class="small">
-                        The Smart Home Automation System is an innovative project that utilizes IoT technology to transform traditional homes into intelligent living spaces. This system allows users to remotely control and monitor household devices such as lights, thermostats, security cameras, and appliances through a centralized application.
-                    </p>
-                </div>
-            </div>
-        </div>
+        <!-- Footer -->
+        <footer class="text-center mt-4">
+            <p>&copy; 2024 Personal Portfolio. All rights reserved.</p>
+        </footer>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
