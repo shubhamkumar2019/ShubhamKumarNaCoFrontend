@@ -48,69 +48,53 @@
         <div class="row gy-4">
             <!-- Personal Info -->
             <div class="col-md-4">
-                <!-- Column spanning 4 grid spaces on medium screens and larger -->
-                <div class="card text-center">
-                    <!-- Card component for a structured layout with centered text -->
-                    <div class="card-body">
-                        <!-- Card body containing the content -->
-                        <h2 class="card-title">Personal Profile</h2>
-                        <!-- Title of the card -->
-                        <div class="">
-                            <!-- Placeholder for profile icon -->
-                            <img src="assets/css/images/icons8-portfolio-50.png" alt="">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title text-center">Personal Profile</h2>
+                        <div class="text-center mb-3">
+                            <img src="assets/images/icons8-portfolio-50.png" alt="Portfolio icon">
                         </div>
-                        <!-- Profile description -->
-                        <p>
+                        <p class="flex-grow-1">
                             I am Shubham kumar, a dedicated and ambitious developer with expertise in front-end technologies like
-                            HTML, CSS,
-                            JavaScript, and React, alongside backend experience in Django and Strapi. With a solid
-                            foundation in
-                            databases such as SQL and PostgreSQL, I have successfully delivered diverse projects that
-                            bridge
-                            technology and real-world solutions. My portfolio includes building a dynamic event calendar
-                            application,
-                            developing an IoT-enabled pollution meter to monitor air quality using Arduino, and creating
-                            a fully
-                            functional e-commerce platform using React, Strapi, and Stripe. Having completed the
-                            Metacrafters summer
-                            training program in blockchain technologies like Ethereum, Avalanche, and Polygon, I am
-                            continually
-                            expanding my skill set.
+                            HTML, CSS, JavaScript, and React, alongside backend experience in Django and Strapi. With a solid
+                            foundation in databases such as SQL and PostgreSQL, I have successfully delivered diverse projects that
+                            bridge technology and real-world solutions. My portfolio includes building a dynamic event calendar
+                            application, developing an IoT-enabled pollution meter to monitor air quality using Arduino, and creating
+                            a fully functional e-commerce platform using React, Strapi, and Stripe. Having completed the
+                            Metacrafters summer training program in blockchain technologies like Ethereum, Avalanche, and Polygon, I am
+                            continually expanding my skill set.
                         </p>
                     </div>
                 </div>
             </div>
 
+           <!-- Profile Section -->
+           <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
 
-            <!-- Profile Section -->
-            <div class="col-md-4">
-                <div class="card text-center">
-                    <div class="card-body">
+                    <div class="personal-aling">
+                        <div class="noimg">Title</div>
+                        <div><img src="assets/images/icons8-male-user-50.png"  alt=""></div>
+                        <div class="noimg">info</div>
+                    </div>
 
-                        <div class="personal-aling">
-                            <div class="noimg">Title</div>
-                            <div><img src="assets/css/images/icons8-male-user-50.png"  alt=""></div>
-                            <div class="noimg">info</div>
-                        </div>
-
-                        <div class="container my-2">
+                        <div class="container my-2 flex-grow-1">
                             <h3 class="text-center">Personal Portpone</h3>
-                            <div class="row">
-                                <div class="col-md-6 d-flex justify-content-center row-gap ">
-                                    <div class="bio-box p-3">
+                            <div class="row h-100">
+                                <div class="col-md-6 d-flex flex-column mb-3 mb-md-0">
+                                    <div class="bio-box p-3 flex-grow-1">
                                         <h5 class="text-center"><strong>BIO:</strong></h5>
                                         <ul class="list-unstyled">
                                             <li>21 years old</li>
                                             <li>Bihar</li>
                                             <li>Nawada</li>
                                             <li>Kalinga institute of industrial technology</li>
-                                            <li>3rd Year</li>
-                                            <li>hobbies: Handball</li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-6 d-flex justify-content-center">
-                                    <div class="bio-box p-3">
+                                <div class="col-md-6 d-flex flex-column">
+                                    <div class="bio-box p-3 flex-grow-1">
                                         <h5 class="text-center"><strong>Languages:</strong></h5>
                                         <ul class="list-unstyled">
                                             <li>HTML</li>
@@ -124,132 +108,99 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
             <!-- Personal Content -->
             <div class="col-md-4">
-                <div class="card">
-                    <!-- A card component for consistent styling -->
-                    <div class="card-body">
-                        <!-- Card body containing the main content -->
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
                         <h2 class="card-title text-center">Personal Content</h2>
-                        <!-- Title of the section, centered -->
-                        <ul class="list-group">
-                            <!-- List group for structured content -->
-
+                        <ul class="list-group flex-grow-1">
                             <!-- Section 1: About Me -->
                             <div class="list-group-item gap-2 mt-2">
-                                <!-- List group item with gap for spacing and margin-top -->
-                                <button class="btn btn-success">About Me</button>
-                                <!-- Button for "About Me" functionality -->
-                                <li>Web Dev</li>
-                                <!-- Skill listed -->
-                                <li>Block chain dev</li>
-                                <!-- Skill listed -->
-                                <li>Content writer</li>
-                                <!-- Skill listed -->
-                                <li>Project Manager</li>
-                                <!-- Skill listed -->
+                                <h5>About Me</h5>
+                                <ul>
+                                    <li>Web Dev</li>
+                                    <li>Block chain dev</li>
+                                    <li>Content writer</li>
+                                    <li>Project Manager</li>
+                                </ul>
                             </div>
 
                             <!-- Section 2: Contact Information -->
                             <div class="list-group-item gap-5 mt-1">
-                                <!-- List group item for contact details -->
-                                <button class="btn btn-primary">Contact us</button>
-                                <!-- Button for "Contact Us" functionality -->
-                                <li>phone: 6202608002</li>
-                                <!-- Contact phone number -->
-                                <li>github: https://github.com/shubhamkumar2019</li>
-                                <!-- GitHub profile link -->
-                                <li>linked in: https://www.linkedin.com/in/shubham-kumar-4489-s/</li>
-                                <!-- LinkedIn profile link -->
-                                <li>FaceBook: https://Facebook.com</li>
-                                <!-- Facebook profile link -->
+                                <h5>Contact Us</h5>
+                                <ul>
+                                    <li>Phone: 6202608002</li>
+                                    <li>GitHub: <a href="https://github.com/shubhamkumar2019" target="_blank">shubhamkumar2019</a></li>
+                                    <li>LinkedIn: <a href="https://www.linkedin.com/in/shubham-kumar-4489-s/" target="_blank">Shubham Kumar</a></li>
+                                    <li>Facebook: <a href="https://Facebook.com" target="_blank">Facebook Profile</a></li>
+                                </ul>
                             </div>
 
                             <!-- Section 3: Hobbies -->
                             <div class="list-group-item">
-                                <!-- List group item for hobbies -->
-                                <strong>Hobbies</strong>
-                                <!-- Title for hobbies section -->
-                                <li>Cricket</li>
-                                <!-- Hobby listed -->
-                                <li>Chess</li>
-                                <!-- Hobby listed -->
-                                <li>Handball</li>
-                                <!-- Hobby listed -->
-                                <!-- <li>Video editing</li> -->
-                                <!-- Commented-out hobby -->
+                                <h5>Hobbies</h5>
+                                <ul>
+                                    <li>Cricket</li>
+                                    <li>Chess</li>
+                                    <li>Handball</li>
+                                </ul>
                             </div>
                         </ul>
                     </div>
                 </div>
-
             </div>
 
             <!-- Basic Info Section -->
             <div class="col-md-4">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h2 class="card-title">Basic Info</h2>
-                        <p>Background details and key facts.</p>
-                        <p>Life is full of challenges, but sometimes we face problems that seem too big to handle.
-                             People make mistakes, but it’s normal,
-                              and we can always learn from them.
-                               Some situations feel unfair, like when we don’t get
-                                what we deserve, but patience and kindness can help us move forward.
-                                 We all make decisions that affect others, so it’s important to
-                                  think carefully and avoid hurting anyone. Life is not always easy,
-                                   but with understanding and respect,
-                                    we can overcome difficulties and find happiness.!</p>
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title text-center">Basic Info</h2>
+                        <p class="flex-grow-1">Background details and key facts. Life is full of challenges, but sometimes we face problems that seem too big to handle.
+                            People make mistakes, but it's normal, and we can always learn from them. Some situations feel unfair, like when we don't get
+                            what we deserve, but patience and kindness can help us move forward. We all make decisions that affect others, so it's important to
+                            think carefully and avoid hurting anyone. Life is not always easy, but with understanding and respect,
+                            we can overcome difficulties and find happiness!</p>
                     </div>
                 </div>
             </div>
 
             <!-- Projects Section -->
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
                         <h2 class="card-title text-center">Projects</h2>
-                        <ul class="list-group">
+                        <ul class="list-group mb-3">
                             <li class="list-group-item">Portfolio Website</li>
                         </ul>
-                        <div class="description">
-                            <li><strong>HTML & CSS</strong></li>
+                        <div class="description flex-grow-1">
+                            <h5><strong>HTML & CSS</strong></h5>
                             <p>Life is full of challenges, but sometimes we face problems that seem too big to handle.
-                                People make mistakes, but it’s normal,
-                                 and we can always learn from them.
-                                  Some situations feel unfair, like when we don’t get
-                                   what we deserve, but patience and kindness can help us move forward.
-                                    We all make decisions that affect others, so it’s important to
-                                     think carefully and avoid hurting anyone. Life is not always easy,
-                                      but with understanding and respect,
-                                       we can overcome difficulties and find happiness.!</p>
+                                People make mistakes, but it's normal, and we can always learn from them. Some situations feel unfair, like when we don't get
+                                what we deserve, but patience and kindness can help us move forward. We all make decisions that affect others, so it's important to
+                                think carefully and avoid hurting anyone. Life is not always easy, but with understanding and respect,
+                                we can overcome difficulties and find happiness!</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
                         <h2 class="card-title text-center">Projects</h2>
-                        <ul class="list-group">
+                        <ul class="list-group mb-3">
                             <li class="list-group-item">NotePad Online</li>
                         </ul>
-                        <div class="description">
-                            <li><strong>HTML & CSS</strong></li>
+                        <div class="description flex-grow-1">
+                            <h5><strong>HTML & CSS</strong></h5>
                             <p>Life is full of challenges, but sometimes we face problems that seem too big to handle.
-                                People make mistakes, but it’s normal,
-                                 and we can always learn from them.
-                                  Some situations feel unfair, like when we don’t get
-                                   what we deserve, but patience and kindness can help us move forward.
-                                    We all make decisions that affect others, so it’s important to
-                                     think carefully and avoid hurting anyone. Life is not always easy,
-                                      but with understanding and respect,
-                                       we can overcome difficulties and find happiness.!</p>
+                                People make mistakes, but it's normal, and we can always learn from them. Some situations feel unfair, like when we don't get
+                                what we deserve, but patience and kindness can help us move forward. We all make decisions that affect others, so it's important to
+                                think carefully and avoid hurting anyone. Life is not always easy, but with understanding and respect,
+                                we can overcome difficulties and find happiness!</p>
                         </div>
                     </div>
                 </div>
@@ -266,3 +217,4 @@
 </body>
 
 </html>
+
